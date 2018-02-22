@@ -411,7 +411,7 @@ const Flightdata = {
       departure_date: this.props.departure_date,
       return_date: this.props.return_date,
       query: this.props.city,
-      weatherQuery: this.props.city
+      
     })
  }
 
@@ -443,7 +443,8 @@ const Flightdata = {
               this.search()
               this.google_search()
               this.search_flights()
-              // this.show_weather()
+              console.log("landmarks -----------------" ,this.props.city);
+              this.setState({weatherQuery: this.props.city})
             }
           }/><div><h4 style={{fontSize: '1.6em', paddingTop: '30px',paddingLeft: '240px'}}>Click RouteTour to get travel destination inspirations</h4></div>
           </div>}
@@ -486,7 +487,7 @@ const Flightdata = {
 
                
               <div>
-                  {/* <Weather cityname= {this.state.weatherQuery}/>  */}
+                 <Weather cityname= {this.state.weatherQuery}/>
 
               </div>
 

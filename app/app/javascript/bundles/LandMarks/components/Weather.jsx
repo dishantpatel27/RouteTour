@@ -118,18 +118,19 @@ class Map extends React.Component{
   }
 
   
-    componentWillMount(){
-      if(this.props.cityname){
-        this.handleFormSubmit(this.props.cityname);
-      }
-    }
+    // componentWillMount(){
+    //   console.log("in weather:",this.props.cityname)
+    //   if(this.props.cityname){
+    //     this.handleFormSubmit(this.props.cityname);
+    //   }
+    // }
    
   
   
   render(){
-    // if(this.props.cityname){
-    //   this.handleFormSubmit(this.props.cityname);
-    // }
+    if(this.props.cityname){
+      this.handleFormSubmit(this.props.cityname);
+    }
     return(
      
             
